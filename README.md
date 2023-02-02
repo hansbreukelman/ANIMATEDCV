@@ -1,2 +1,2 @@
 # ANIMATEDCV
-My animated curriculum vitae
+My animated curriculum vitae project
