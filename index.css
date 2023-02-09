@@ -1,0 +1,370 @@
+.flip {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 300px;
+}
+.flip:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+.flip .flip-inner {
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+  height: 100%;
+  width: 100%;
+}
+.flip .flip-inner .front, .flip .flip-inner .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.flip .flip-inner .front {
+  transform: translateZ(1px);
+}
+.flip .flip-inner .back {
+  transform: rotateY(180deg);
+}
+.flip .flip-inner .thumbnail {
+  width: 100%;
+}
+
+/*# sourceMappingURL=index.css.map */
+
+.st0 {
+    fill:none;
+}
+
+.st1 {
+    text-align: center;
+    fill:#FFFFFF;
+    font-family:'Raleway-ExtraBold';
+    font-size:37px;
+    letter-spacing:4px;
+}
+
+
+.st2 {
+    fill:none;
+    stroke:#545450  ;
+    stroke-width:3;
+    stroke-miterlimit:10;
+}
+
+.dash {
+    stroke-dasharray: 12.1947,12.1947,12.1947,12.1947,12.1947,12.1947;
+}
+
+.st3 {
+    fill:#FFF;
+    fill-opacity:0;
+    stroke:#545450 ;
+    stroke-width:3;
+    stroke-miterlimit:10;
+    cursor: pointer;
+}
+
+.st4 {
+    fill:#FFF;
+    fill-opacity:0;
+    stroke:#cbcbc6;
+    stroke-width:3;
+    stroke-miterlimit:10;
+    cursor: pointer;
+}
+
+.st5 {
+    fill:none;
+    stroke:#cbcbc6;
+    stroke-width:3;
+    stroke-miterlimit:10;
+}
+
+.st7 {
+    fill:none;
+    stroke:#545450 ;
+    stroke-width:3;
+    stroke-miterlimit:10;
+}
+
+.st8 {
+    fill:none;
+    stroke:#545450;
+    stroke-width:3;
+    stroke-miterlimit:10;
+}
+
+.st9 {
+    z-index: -1;
+    fill:#FFF;
+    font-family:'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 6px;
+}
+
+.st10 {
+    z-index: -1;
+    fill:#cbcbc6;
+    font-family:'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 6px;
+}
+
+.st11 {
+    z-index: -1;
+    text-align: center;
+    fill:#545450;
+    font-family:'Raleway-SemiBold';
+    font-size:10px;
+    letter-spacing:1px;
+}
+
+.st12 {
+    z-index: -1;
+    fill:#cbcbc6;
+    font-family:'Raleway-SemiBold', sans-serif;
+    font-size: 10px;
+    letter-spacing: 6px;
+    cursor: pointer;
+}
+
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+
+.fade-in {
+    opacity:0;
+    opacity: 1 \9; /*just in case ie*/
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+
+
+.fade-in.seven {
+    -webkit-animation-delay: 2.5s;
+    -moz-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+}
+
+
+.stroke {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    -webkit-transition: stroke 1s linear forwards;
+    transition: stroke 1s linear forwards;
+    -moz-transition: stroke 1s linear forwards;
+    -o-animation-delay: stroke 1s linear forwards;
+    animation: stroke 1s linear forwards;
+    animation-delay: 1s;
+}
+
+@keyframes stroke {
+    from {
+        stroke-dashoffset: 1000;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.stroke2 {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    -webkit-transition: stroke2 2s linear forwards;
+    transition: stroke2 2s linear forwards;
+    -moz-transition: stroke2 2s linear forwards;
+    -o-animation-delay: stroke2 2s linear forwards;
+    animation: stroke2 2s linear forwards;
+    animation-delay: 3.5s;
+}
+
+@keyframes stroke2 {
+    from {
+        stroke-dashoffset: 500;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+.photo {          
+    stroke-dasharray: 800;
+    stroke-dashoffset: 800;
+    -webkit-transition: photo 1s linear forwards;
+    transition: photo 1s linear forwards;
+    -moz-transition: photo 1s linear forwards;
+    -o-animation-delay: photo 1s linear forwards;
+    animation: photo 1s linear forwards;
+    animation-delay: 1.8s;
+}
+
+@keyframes photo {
+    from {
+        stroke-dashoffset: 800;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+#tekst {
+    font-family:'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+    letter-spacing: 3px;
+    fill:#545450;
+}
+
+svg #tekst {display: none;}
+svg g:hover #tekst {display: block;}
+
+.tekst {
+    opacity:0;
+    opacity: 1 \9; /*just in case ie*/
+    -webkit-animation:tekst ease-in 1;
+    -moz-animation:tekst ease-in 1;
+    animation:tekst ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+
+
+.tekst.two {
+    -webkit-animation-delay: 5.2s;
+    -moz-animation-delay: 5.2s;
+    animation-delay: 6.08s;
+}
+
+#foto {
+    cursor: pointer;
+}
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.hvr-grow:hover, 
+.hvr-grow:focus, 
+.hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* Hollow */
+.hvr-hollow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: background;
+    transition-property: background;
+    box-shadow: inset 0 0 0 4px #e1e1e1, 0 0 1px rgba(0, 0, 0, 0);
+    /* Hack to improve aliasing on mobile/tablet devices */
+}
+
+.hvr-hollow:hover, .hvr-hollow:focus, .hvr-hollow:active {
+     background: none;
+}
+
+.fade-in.home {
+    -webkit-animation-delay: 3.1s;
+    -moz-animation-delay: 3.1s;
+    animation-delay: 3.1s;
+    cursor: pointer;
+}
+
+.fade-in.tel {
+    -webkit-animation-delay: 3.3s;
+    -moz-animation-delay: 3.3s;
+    animation-delay: 3.3s;
+    cursor: pointer;
+}
+
+.fade-in.car {
+    -webkit-animation-delay: 3.5s;
+    -moz-animation-delay: 3.5s;
+    animation-delay: 3.5s;
+    cursor: pointer;
+}
+
+.fade-in.mail {
+    -webkit-animation-delay: 3.7s;
+    -moz-animation-delay: 3.7s;
+    animation-delay: 3.7s;
+    cursor: pointer;
+}
+
+.bounce-in {
+    animation: bounce-in 2s ease;
+    animation-iteration-count: 1;
+}
+
+.bounce-in.home {
+    animation-delay: 2.9s;
+}
+
+.bounce-in.tel {
+    animation-delay: 3.1s;
+}
+
+.bounce-in.car {
+    animation-delay: 3.3s;
+}
+
+.bounce-in.mail {
+    animation-delay: 3.5s;
+}
+
+@keyframes bounce-in {
+    0% {
+      opacity: 0;
+      transform: scale(.3);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+    70% { transform: scale(.9); }
+    100% { transform: scale(1); }
+}
+
+.hg{
+    cursor: pointer;
+    fill:#cbcbc6;opacity:0;
+}

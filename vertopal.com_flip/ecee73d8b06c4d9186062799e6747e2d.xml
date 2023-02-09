@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE article>
+<article
+  xml:lang="en"
+  xmlns="http://docbook.org/ns/docbook" version="5.0"
+  xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <info>
+    <title>Hans Breukelman</title>
+  </info>
+  <para>
+    <inlinemediaobject>
+      <imageobject>
+        <imagedata fileref="vertopal_ecee73d8b06c4d9186062799e6747e2d/d99e0c2521d5e781de5888b21761c91ae40e61bf.jpg" role="thumbnail" />
+      </imageobject>
+    </inlinemediaobject>
+  </para>
+  <para>
+    <inlinemediaobject>
+      <imageobject>
+        <imagedata fileref="vertopal_ecee73d8b06c4d9186062799e6747e2d/71a88d6d6784a2fe42dd80c1d4272fe294851b9d.jpg" role="thumbnail thumbnail-hover" />
+      </imageobject>
+    </inlinemediaobject>
+  </para>
+</article>

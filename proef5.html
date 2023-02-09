@@ -74,7 +74,7 @@
             <!-- Animated vertical line from foto -->
             <path stroke="#545450" stroke-width="3" x1="470" y1="327.9" x2="470" y2="416.3" r="90">
                 <animate 
-                    id="lineAnimation" 
+                    id="lineAnimation1" 
                     dur="0.5s" 
                     begin="startAnimation.begin" 
                     attributeName="d" 
@@ -85,9 +85,9 @@
             <!-- Animated vertiacl line from horizontal line -->
             <path stroke="#545450" stroke-width="3" x1="470" y1="327.9" x2="470" y2="440" r="90">
                 <animate 
-                    id="lineAnimation" 
+                    id="lineAnimation2" 
                     dur="0.5s" 
-                    begin="iconSchool.begin" 
+                    begin="lineAnimation1.end" 
                     attributeName="d" 
                     values="M470 327.9 470 400; M470 327.9 470 600;" 
                     fill="freeze" />
@@ -98,77 +98,37 @@
                 <animate 
                     id="expoAnimation" 
                     dur="0.6s" 
-                    begin="lineAnimation.end" 
+                    begin="lineAnimation1.end" 
                     attributeName="d" 
                     values="M380 430 l0 0; M134 430 l675 0;"
                     fill="freeze" />
             </path> 
 
-            <!-- School icon -->
-            <g class="row hg" transform="matrix(0.8 0 0 0.8 80 400)">
 
-                <animate    
-                    id="iconSchool"
-                    attributeName="opacity"
-                    keyTimes="0;0.1;0.5;0.6;1" 
-                    values="0;0;0;0;1"
-                    dur="1s"
-                    begin="lineAnimation.end"
-                    fill="freeze" 
-                />
-
-                <image  
-                    class="hvr-grow"
-                    width="70" 
-                    height="70" 
-                    xlink:href="Images/school.png">
-                </image>
-
-            </g>
-
-            <!-- Animated vertiacl line from school icon -->
-            <!-- <path stroke="#545450" stroke-width="3" x1="470" y1="327.9" x2="470" y2="440" r="90">
-                <animate 
-                    id="lineAnimation" 
-                    dur="0.5s" 
-                    begin="iconSchool.begin" 
-                    attributeName="d" 
-                    values="M190 400 190 410; M190 400 190 650;" 
-                    fill="freeze" />
-            </path> -->
-
-            <!-- Work icon -->
-            <g class="row hg" transform="matrix(0.8 0 0 0.8 805 400)">
-
-                <animate    
-                    id="animIcon1"
-                    attributeName="opacity"
-                    keyTimes="0;0.1;0.5;0.6;1" 
-                    values="0;0;0;0;1"
-                    dur="1s"
-                    begin="lineAnimation.end"
-                    fill="freeze" 
-                />
-
-                <image  
-                    class="hvr-grow"
-                    width="70" 
-                    height="70" 
-                    xlink:href="Images/work.png">
-                </image>
-
-            </g>
-
-
-
-            <!-- Profiel foto -->
             <g id="foto">
+    
+                <image 
+                    class="fade-in seven" 
+                    width="368" 
+                    height="368" 
+                    xlink:href="Images/hansie-trans-3.png"  
+                    transform="matrix(0.4965 0 0 0.4965 376.6996 145.1483)">
+                </image>
 
                 <circle class="st2 photo" cx="468.4" cy="236.5" r="91.4" fill="#545450" fill-opacity="0.0"/>
 
             </g>
-              
+
             <circle class="st4 dash outline four" cx="468.4" cy="236.5" r="100"> 
+
+                <animate 
+                    id="startAnimation" 
+                    dur="2.0s" 
+                    attributeName="r" 
+                    values="100; 100" 
+                    fill="freeze" 
+                    begin="click"
+                />
                 
                 <!-- Dash-circle profile picture -->
                 <animate 
@@ -183,7 +143,7 @@
                 />
 
                 <!-- Unkown -->
-                <!-- <animate 
+                <animate 
                     attributeName="t" 
                     attributeType="XML" 
                     begin="3s" 
@@ -191,7 +151,7 @@
                     from="88" 
                     to="106" 
                     fill="freeze"
-                /> -->
+                />
         
                 <!-- Animation dash-circle profile picture-->
                 <animateTransform 
@@ -209,7 +169,7 @@
 
             <!-- repeatCount="pauze" -->
 
-            <!-- <button onclick="allmove()">click</button> -->
+            <!-- <button onclick="allmove">click</button> -->
             <text begin="3.s" transform="matrix(1 0 0 1 150 420)" class="st12">
   
                 <animate 
@@ -341,6 +301,59 @@
                 </g>
             </g>
 
+            <!-- School icon -->
+            <g class="row hg" transform="matrix(0.8 0 0 0.8 80 400)">
+
+                <animate    
+                    id="iconSchool"
+                    attributeName="opacity"
+                    keyTimes="0;0.1;0.5;0.6;1" 
+                    values="0;0;0;0;1"
+                    dur="1s"
+                    begin="lineAnimation1.end"
+                    fill="freeze"
+                />
+
+                <image  
+                    class="hvr-grow"
+                    width="70" 
+                    height="70" 
+                    xlink:href="Images/school.png">
+                </image>
+
+                <animate 
+                    id="iconSchool2" 
+                    dur="2.0s" 
+                    attributeName="r" 
+                    values="100; 100" 
+                    fill="freeze" 
+                    begin="click"
+                />
+
+            </g>
+
+            <!-- Work icon -->
+            <g class="row hg" transform="matrix(0.8 0 0 0.8 805 400)">
+
+                <animate    
+                    id="animIcon1"
+                    attributeName="opacity"
+                    keyTimes="0;0.1;0.5;0.6;1" 
+                    values="0;0;0;0;1"
+                    dur="1s"
+                    begin="lineAnimation1.end"
+                    fill="freeze" 
+                />
+
+                <image  
+                    class="hvr-grow"
+                    width="70" 
+                    height="70" 
+                    xlink:href="Images/work.png">
+                </image>
+
+            </g>
+
             <!-- <rect x="74.1" y="59.7" class="st0" width="431.8" height="36.8"></rect> -->
 
             <rect x="55" y="118" class="st0" width="400" height="240"/>
@@ -381,64 +394,17 @@
                 <animate attributeName="d" from="m105,315 h0" to="m91,315 h500" dur="2.4s" begin="iconMail.begin" repeatCount="0" fill="freeze"/>
             </path>
 
-
-            <circle class="st2 photo" cx="468.4" cy="236.5" r="91.4" fill="#545450" fill-opacity="0.0">
-            
-                <g id="foto">
-            
-                    <div class="flip">
-                        <div class="flip-inner">
-                            <div class="front">
-                                <img class="thumbnail fade-in seven" 
-                                    src="Images/hansie-trans-3.png" 
-                                    alt="コイン表">
-                            </div>
-
-                            <div class="back">
-                                <img class="thumbnail thumbnail-hover" 
-                                    src="Images/giphy_1.gif" 
-                                    alt="コイン裏">
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <animate 
-                            id="startAnimation" 
-                            dur="2.0s" 
-                            attributeName="r" 
-                            values="100; 100" 
-                            fill="freeze" 
-                            begin="click"
-                    />  
-                    
-                </g>
-
-                <circle class="st41" cx="468.4" cy="236.5" r="100"> 
-
-                    <animate 
-                        id="startAnimation" 
-                        dur="2.0s" 
-                        attributeName="r" 
-                        values="100; 100" 
-                        fill="freeze" 
-                        begin="click"
-                    />   
-
-                    <animate 
-                        attributeName="t" 
-                        attributeType="XML" 
-                        begin="3s" 
-                        dur="0.5s" 
-                        from="88" 
-                        to="106" 
-                        fill="freeze"
-                    />
-
-                </circle>  
-
-            </circle>   
+             <!-- Animated vertiacl line from school icon -->
+            <path stroke="#545451" stroke-width="3" x1="470" y1="327.9" x2="470" y2="440" r="90">
+                <animate 
+                    id="lineAnimation3" 
+                    dur="0.5s" 
+                    begin="iconSchool2.begin" 
+                    attributeName="d" 
+                    values="M190 400 190 410; M190 400 190 650;" 
+                    repeatCount="0"
+                    fill="freeze" />
+            </path>
 
         </svg>
 
