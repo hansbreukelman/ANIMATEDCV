@@ -103,6 +103,24 @@
     cursor: pointer;
 }
 
+.st13 {
+    z-index: -1;
+    text-align: center;
+    fill:#545450;
+    font-family:'Raleway-Bold';
+    font-size:12px;
+    letter-spacing:1px;
+}
+
+.st14 {
+    z-index: 1;
+    text-align: center;
+    fill:#545450;
+    font-family:'Raleway-Medium';
+    font-size:9px;
+    letter-spacing:1px;
+}
+
 
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -334,6 +352,10 @@ svg g:hover #tekst {display: block;}
 
 .hg{
     cursor: pointer;
+    fill:#cbcbc6;opacity:0;
+}
+
+.hgb{
     fill:#cbcbc6;opacity:0;
 }
 
