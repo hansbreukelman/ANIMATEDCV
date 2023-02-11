@@ -78,7 +78,7 @@
                     dur="0.5s" 
                     begin="startAnimation.begin" 
                     attributeName="d" 
-                    values="M470 327.9 470 200; M470 327.9 470 431;" 
+                    values="M470 327.9 470 300; M470 327.9 470 431;" 
                     fill="freeze" />
             </path>
 
@@ -432,15 +432,12 @@
                     dur="0.5s" 
                     begin="ball2.end" 
                     attributeName="d" 
-                    values="M190 430 190 430; M190 430 190 900;" 
+                    values="M190 430 190 430; M190 430 190 934;" 
                     repeatCount="0"
                     fill="freeze" />
             </path>
 
-
-             <!-- >>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<
-            ++++++++ Text input Schools - Cloud Enginering ++++++++++
-            >>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<< -->
+            <!-- >>>>>>>>>>>>>>>>>>> BALLS <<<<<<<<<<<<<<<<<< -->
 
             <!-- ball cloud -->
             <g class="row hgb" >
@@ -458,6 +455,91 @@
 
             </g>
 
+            <!-- ball media -->
+            <g class="row hgb" >
+                <animate    
+                    id="ball4"
+                    attributeName="opacity"
+                    keyTimes="0;0.1;0.5;0.6;1" 
+                    values="0;0;0;0;1"
+                    dur="0.2s"
+                    begin="ball3.end"
+                    fill="freeze"
+                />
+
+                <circle cx="190" cy="572" r="4" stroke-width="2" fill="#545450" />
+
+            </g>
+
+            <!-- ball ivm -->
+            <g class="row hgb" >
+                <animate    
+                    id="ball5"
+                    attributeName="opacity"
+                    keyTimes="0;0.1;0.5;0.6;1" 
+                    values="0;0;0;0;1"
+                    dur="0.2s"
+                    begin="ball4.end"
+                    fill="freeze"
+                />
+
+                <circle cx="190" cy="660" r="4" stroke-width="2" fill="#545450" />
+
+            </g>
+
+             <!-- ball orientatie -->
+             <g class="row hgb" >
+                <animate    
+                    id="ball6"
+                    attributeName="opacity"
+                    keyTimes="0;0.1;0.5;0.6;1" 
+                    values="0;0;0;0;1"
+                    dur="0.2s"
+                    begin="ball5.end"
+                    fill="freeze"
+                />
+
+                <circle cx="190" cy="755" r="4" stroke-width="2" fill="#545450" />
+
+            </g>
+
+            <!-- ball rpc -->
+            <g class="row hgb" >
+                <animate    
+                    id="ball7"
+                    attributeName="opacity"
+                    keyTimes="0;0.1;0.5;0.6;1" 
+                    values="0;0;0;0;1"
+                    dur="0.2s"
+                    begin="ball6.end"
+                    fill="freeze"
+                />
+
+                <circle cx="190" cy="835" r="4" stroke-width="2" fill="#545450" />
+
+            </g>
+
+            <!-- ball vmbo -->
+            <g class="row hgb" >
+                <animate    
+                    id="ball8"
+                    attributeName="opacity"
+                    keyTimes="0;0.1;0.5;0.6;1" 
+                    values="0;0;0;0;1"
+                    dur="0.2s"
+                    begin="ball7.end"
+                    fill="freeze"
+                />
+
+                <circle cx="190" cy="930" r="4" stroke-width="2" fill="#545450" />
+
+            </g>
+
+
+             <!-- >>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<
+            ++++++++ Text input Schools - Cloud Enginering ++++++++++
+            >>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<< -->
+
             
            <!-- Text input Schools - Cloud Enginering  -->
             
@@ -472,7 +554,7 @@
             </text>
 
             <path id="cloudText1">
-                <animate id="cloudy" attributeName="d" from="m80,100 h0" to="m65,100 h500" dur="1s" begin="lineAnimation3.end" repeatCount="0" fill="freeze"/>
+                <animate id="cloudy" attributeName="d" from="m80,100 h0" to="m65,100 h500" dur="1s" begin="ball8.end" repeatCount="0" fill="freeze"/>
             </path>
             <path id="cloudText2">
                 <animate attributeName="d" from="m80,115 h0" to="m65,115 h500" dur="1s" begin="cloudy.end" repeatCount="0" fill="freeze"/>
@@ -496,22 +578,6 @@
             ++++++++ Media ++++++++++
             >>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<< -->
 
-            <!-- ball media -->
-            <g class="row hgb" >
-                <animate    
-                    id="ball4"
-                    attributeName="opacity"
-                    keyTimes="0;0.1;0.5;0.6;1" 
-                    values="0;0;0;0;1"
-                    dur="0.2s"
-                    begin="cloudje.end"
-                    fill="freeze"
-                />
-
-                <circle cx="190" cy="572" r="4" stroke-width="2" fill="#545450" />
-
-            </g>
-
              <!-- Text input Schools - Media  -->
 
             <text transform="matrix(1 0 0 1 140 476)" >
@@ -523,7 +589,7 @@
             </text>
 
             <path id="mediaText1">
-                <animate id="media" attributeName="d" from="m80,100 h0" to="m65,100 h500" dur="1s" begin="ball4.end" repeatCount="0" fill="freeze"/>
+                <animate id="media" attributeName="d" from="m80,100 h0" to="m65,100 h500" dur="1s" begin="cloudyyear.end" repeatCount="0" fill="freeze"/>
             </path>
             <path id="mediaText2">
                 <animate attributeName="d" from="m80,115 h0" to="m65,115 h500" dur="1s" begin="media.end" repeatCount="0" fill="freeze"/>
@@ -544,22 +610,6 @@
             ++++++++ Interieur Verf en Managment ++++++++++
             >>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<< -->
 
-            <!-- ball ivm -->
-            <g class="row hgb" >
-                <animate    
-                    id="ball5"
-                    attributeName="opacity"
-                    keyTimes="0;0.1;0.5;0.6;1" 
-                    values="0;0;0;0;1"
-                    dur="0.2s"
-                    begin="medias.end"
-                    fill="freeze"
-                />
-
-                <circle cx="190" cy="660" r="4" stroke-width="2" fill="#545450" />
-
-            </g>
-
              <!-- Text input Schools - ivm-->
              <text transform="matrix(1 0 0 1 140 565)" >
                 <textPath class="st13" xlink:href="#ivmText1">IVM (Interior design, paint</textPath>
@@ -570,43 +620,24 @@
             </text>
 
             <path id="ivmText1">
-                <animate id="ivm" attributeName="d" from="m80,100 h0" to="m65,100 h500" dur="1s" begin="ball5.end" repeatCount="0" fill="freeze"/>
+                <animate id="ivm" attributeName="d" from="m80,100 h0" to="m65,100 h500" dur="1s" begin="mediayear.end" repeatCount="0" fill="freeze"/>
             </path>
             <path id="ivmText11">
-                <animate attributeName="d" from="m80,115 h0" to="m65,115 h500" dur="1s" begin="ball5.end" repeatCount="0" fill="freeze"/>
+                <animate attributeName="d" from="m80,115 h0" to="m65,115 h500" dur="1s" begin="mediayear.end" repeatCount="0" fill="freeze"/>
             </path>
             <path id="ivmText2">
                 <animate attributeName="d" from="m80,130 h0" to="m65,130 h500" dur="1s" begin="ivm.end" repeatCount="0" fill="freeze"/>
             </path>
             <path id="ivmText3">
-                <animate id="ivm2" attributeName="d" from="m80,142 h0" to="m65,142 h500" dur="1s" begin="ivm.end" repeatCount="0" fill="freeze"/>
+                <animate attributeName="d" from="m80,142 h0" to="m65,142 h500" dur="1s" begin="ivm.end" repeatCount="0" fill="freeze"/>
             </path>
             <path id="ivmText4">
                 <animate id="ivm2" attributeName="d" from="m80,154 h0" to="m65,154 h500" dur="1s" begin="ivm.end" repeatCount="0" fill="freeze"/>
             </path>
 
-
-
-
              <!-- >>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<
             ++++++++ Orientatie ++++++++++
             >>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<< -->
-
-            <!-- ball orientatie -->
-            <g class="row hgb" >
-                <animate    
-                    id="ball6"
-                    attributeName="opacity"
-                    keyTimes="0;0.1;0.5;0.6;1" 
-                    values="0;0;0;0;1"
-                    dur="0.2s"
-                    begin="ivm2.end"
-                    fill="freeze"
-                />
-
-                <circle cx="190" cy="755" r="4" stroke-width="2" fill="#545450" />
-
-            </g>
 
              <!-- Text input Schools - orientatie-->
              <text transform="matrix(1 0 0 1 140 658)" >
@@ -617,7 +648,7 @@
             </text>
 
             <path id="orientatieText1">
-                <animate id="orientatie" attributeName="d" from="m80,100 h0" to="m65,100 h500" dur="1s" begin="ball6.end" repeatCount="0" fill="freeze"/>
+                <animate id="orientatie" attributeName="d" from="m80,100 h0" to="m65,100 h500" dur="1s" begin="ivmyear.end" repeatCount="0" fill="freeze"/>
             </path>
             <path id="orientatieText2">
                 <animate attributeName="d" from="m80,115 h0" to="m65,115 h500" dur="1s" begin="orientatie.end" repeatCount="0" fill="freeze"/>
@@ -634,36 +665,20 @@
             ++++++++ RPC ++++++++++
             >>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<< -->
 
-            <!-- ball rpc -->
-            <g class="row hgb" >
-                <animate    
-                    id="ball7"
-                    attributeName="opacity"
-                    keyTimes="0;0.1;0.5;0.6;1" 
-                    values="0;0;0;0;1"
-                    dur="0.2s"
-                    begin="orientatie2.end"
-                    fill="freeze"
-                />
-
-                <circle cx="190" cy="835" r="4" stroke-width="2" fill="#545450" />
-
-            </g>
-
              <!-- Text input Schools - rpc-->
              <text transform="matrix(1 0 0 1 140 738)" >
                 <textPath class="st13" xlink:href="#rpcText1">RPC (Advertising, presentation</textPath>
                 <textPath class="st13" xlink:href="#rpcText11">and communication),</textPath>
                 <textPath class="st14" xlink:href="#rpcText2">Cibap, school for the visual arts, Zwolle</textPath>
                 <textPath class="st14" xlink:href="#rpcText3">Education in graphic design, presenting</textPath>
-                <textPath class="st14" xlink:href="#rpcText4">and marketing.</textPath>
+                <textPath class="st14" xlink:href="#rpcText4">and marketing. (one year)</textPath>
             </text>
 
             <path id="rpcText1">
-                <animate id="rpc" attributeName="d" from="m80,100 h0" to="m65,100 h500" dur="1s" begin="ball7.end" repeatCount="0" fill="freeze"/>
+                <animate id="rpc" attributeName="d" from="m80,100 h0" to="m65,100 h500" dur="1s" begin="orientatieyear.end" repeatCount="0" fill="freeze"/>
             </path>
             <path id="rpcText11">
-                <animate attributeName="d" from="m80,115 h0" to="m65,115 h500" dur="1s" begin="ball7.end" repeatCount="0" fill="freeze"/>
+                <animate attributeName="d" from="m80,115 h0" to="m65,115 h500" dur="1s" begin="orientatieyear.end" repeatCount="0" fill="freeze"/>
             </path>
             <path id="rpcText2">
                 <animate attributeName="d" from="m80,130 h0" to="m65,130 h500" dur="1s" begin="rpc.end" repeatCount="0" fill="freeze"/>
@@ -680,22 +695,6 @@
             ++++++++ VMBO ++++++++++
             >>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<< -->
 
-            <!-- ball orientatie -->
-            <g class="row hgb" >
-                <animate    
-                    id="ball8"
-                    attributeName="opacity"
-                    keyTimes="0;0.1;0.5;0.6;1" 
-                    values="0;0;0;0;1"
-                    dur="0.2s"
-                    begin="rpcs.end"
-                    fill="freeze"
-                />
-
-                <circle cx="190" cy="930" r="4" stroke-width="2" fill="#545450" />
-
-            </g>
-
              <!-- Text input Schools - orientatie-->
              <text transform="matrix(1 0 0 1 140 833)" >
                 <textPath class="st13" xlink:href="#vmboText1">VMBO theoretical education,</textPath>
@@ -704,7 +703,7 @@
             </text>
 
             <path id="vmboText1">
-                <animate id="vmbo" attributeName="d" from="m80,100 h0" to="m65,100 h500" dur="1s" begin="ball8.end" repeatCount="0" fill="freeze"/>
+                <animate id="vmbo" attributeName="d" from="m80,100 h0" to="m65,100 h500" dur="1s" begin="rpcyear.end" repeatCount="0" fill="freeze"/>
             </path>
             <path id="vmboText2">
                 <animate attributeName="d" from="m80,115 h0" to="m65,115 h500" dur="1s" begin="vmbo.end" repeatCount="0" fill="freeze"/>
@@ -724,7 +723,7 @@
             </text>
 
             <path id="cloudyearText">
-                <animate attributeName="d" from="m80,100 h0" to="m65,100 h100" dur="1s" begin="lineAnimation3.end" repeatCount="0" fill="freeze"/>
+                <animate id="cloudyyear" attributeName="d" from="m80,100 h0" to="m65,100 h100" dur="1s" begin="cloudje.end" repeatCount="0" fill="freeze"/>
             </path>
 
 
@@ -734,7 +733,7 @@
             </text>
 
             <path id="mediayearText">
-                <animate attributeName="d" from="m80,100 h0" to="m65,100 h100" dur="1s" begin="ball4.end" repeatCount="0" fill="freeze"/>
+                <animate id="mediayear" attributeName="d" from="m80,100 h0" to="m65,100 h100" dur="1s" begin="medias.end" repeatCount="0" fill="freeze"/>
             </path>
 
 
@@ -744,7 +743,7 @@
             </text>
 
             <path id="ivmyearText">
-                <animate attributeName="d" from="m80,100 h0" to="m65,100 h100" dur="1s" begin="ball5.end" repeatCount="0" fill="freeze"/>
+                <animate id="ivmyear" attributeName="d" from="m80,100 h0" to="m65,100 h100" dur="1s" begin="ivm2.end" repeatCount="0" fill="freeze"/>
             </path>
 
             <!-- Orientatie -->
@@ -753,7 +752,25 @@
             </text>
 
             <path id="orientatieyearText">
-                <animate attributeName="d" from="m80,100 h0" to="m65,100 h100" dur="1s" begin="ball6.end" repeatCount="0" fill="freeze"/>
+                <animate id="orientatieyear" attributeName="d" from="m80,100 h0" to="m65,100 h100" dur="1s" begin="orientatie2.end" repeatCount="0" fill="freeze"/>
+            </path>
+
+            <!-- RPC -->
+            <text transform="matrix(1 0 0 1 47 737)" >
+                <textPath class="st11" xlink:href="#rpcyearText">2001 - 2002</textPath>
+            </text>
+
+            <path id="rpcyearText">
+                <animate id="rpcyear" attributeName="d" from="m80,100 h0" to="m65,100 h100" dur="1s" begin="rpcs.end" repeatCount="0" fill="freeze"/>
+            </path>
+
+            <!-- VMBO -->
+            <text transform="matrix(1 0 0 1 47 832)" >
+                <textPath class="st11" xlink:href="#vmboyearText">2001 - 2002</textPath>
+            </text>
+
+            <path id="vmboyearText">
+                <animate id="vmboyear" attributeName="d" from="m80,100 h0" to="m65,100 h100" dur="1s" begin="vmbos.end" repeatCount="0" fill="freeze"/>
             </path>
 
         </svg>
