@@ -12,6 +12,15 @@ body {
     font-weight: 200;
 }
 
+@font-face {
+  font-family: 'bph';
+  src: url('Fonts/webfontkit-20230213-060701/bph-webfont.woff2') format('woff2'),
+       url('Fonts/webfontkit-20230213-060701/bph-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 .wrapper {
   justify-content: space-between;
   width: 100%;

@@ -1,0 +1,187 @@
+%!Adobe-FontList 1.19
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Suitcase
+FontName:BlenderPro-Heavy
+OutlineFileName:\Blender Pro Heavy
+ResourceID:9144
+MacStyle:0
+FileLength:8742
+FileModTime:1208352438
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:BlenderPro-Heavy
+FamilyName:Blender Pro
+StyleName:Heavy
+MenuName:Blender Pro-Heavy
+StyleBits:2
+WeightClass:850
+WidthClass:5
+AngleClass:0
+FullName:Blender Pro-Heavy
+WritingScript:Roman
+OutlineFileName:\BlendProHea
+DataFormat:POSTResource
+UsesStandardEncoding:no
+isCFF:no
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:47105
+FileModTime:1208352438
+DesignSize:-1
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Museo-300
+FamilyName:Museo
+StyleName:300
+MenuName:Museo 300
+StyleBits:0
+WeightClass:300
+WidthClass:5
+AngleClass:0
+FullName:Museo 300
+WritingScript:Roman
+OutlineFileName:\exljbris - Museo-300.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:127096
+FileModTime:1415111022
+NameArray:0,Mac,4,Museo 300
+NameArray:0,Win,1,Museo 300
+NameArray:0,Win,16,Museo
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Museo-700
+FamilyName:Museo
+StyleName:700
+MenuName:Museo 700
+StyleBits:0
+WeightClass:600
+WidthClass:5
+AngleClass:0
+FullName:Museo 700
+WritingScript:Roman
+OutlineFileName:\exljbris - Museo-700.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:129080
+FileModTime:1424545790
+NameArray:0,Mac,4,Museo 700
+NameArray:0,Win,1,Museo 700
+NameArray:0,Win,16,Museo
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MinionPro-Regular
+FamilyName:Minion Pro
+StyleName:Regular
+MenuName:Minion Pro
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Minion Pro
+WritingScript:Roman
+OutlineFileName:\MinionPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:218640
+FileModTime:1429283454
+DesignSize:110
+NameArray:0,Mac,4,Minion Pro
+NameArray:0,Win,1,Minion Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Raleway-Medium
+FamilyName:Raleway
+StyleName:Medium
+MenuName:Raleway Medium
+StyleBits:0
+WeightClass:500
+WidthClass:5
+AngleClass:0
+FullName:Raleway Medium
+WritingScript:Roman
+OutlineFileName:\Raleway-Medium.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:179444
+FileModTime:1455516782
+NameArray:0,Mac,4,Raleway Medium
+NameArray:0,Win,1,Raleway Medium
+NameArray:0,Win,16,Raleway
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Raleway-SemiBold
+FamilyName:Raleway
+StyleName:SemiBold
+MenuName:Raleway SemiBold
+StyleBits:0
+WeightClass:600
+WidthClass:5
+AngleClass:0
+FullName:Raleway SemiBold
+WritingScript:Roman
+OutlineFileName:\Raleway-SemiBold.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:180492
+FileModTime:1455516782
+NameArray:0,Mac,4,Raleway SemiBold
+NameArray:0,Win,1,Raleway SemiBold
+NameArray:0,Win,16,Raleway
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Slimfit
+FamilyName:Slimfit
+StyleName:Regular
+MenuName:Slimfit
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Slimfit
+WritingScript:Roman
+OutlineFileName:\slimfit_demo.otf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:21992
+FileModTime:1418830842
+NameArray:0,Mac,4,Slimfit
+NameArray:0,Win,1,Slimfit
+%EndFont
+

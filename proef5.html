@@ -149,91 +149,112 @@
                     begin="3s" 
                     dur="0.5s" 
                     from="88" 
-                    to="106" 
-                    fill="freeze"
-                />
-        
-                <!-- Animation dash-circle profile picture-->
-                <animateTransform 
-                    attributeType="xml" 
-                    attributeName="transform" 
-                    begin="3s" 
-                    type="rotate"
-                    from="0 468.4 236.5"
-                    to="360 468.4 236.5"
-                    dur="20s"
-                    repeatCount="indefinite"
-                />
-
-            </circle>  
-
-            <!-- repeatCount="pauze" -->
-
-            <!-- <button onclick="allmove">click</button> -->
-            <text begin="3.s" transform="matrix(1 0 0 1 150 420)" class="st12">
-  
-                <animate 
-                    id="textAnimation1" 
-                    attributeName="stroke"
-                    from="#cbcbc6" 
-                    to="#ffffff" 
-                    begin="lineAnimation.end"
-                    dur="1s" 
-                    repeatCount="pauze" 
-                    fill="freeze"
-                />
-   
-                OPLEIDINGEN
-   
-            </text>
-
-            <text begin="3.s" transform="matrix(1 0 0 1 648 420)" class="st12">
-  
-                <animate 
-                    id="textAnimation2" 
-                    attributeName="stroke" 
-                    from="#cbcbc6" 
-                    to="#ffffff" 
-                    begin="lineAnimation.end"
-                    dur="1s" 
-                    repeatCount="pauze" 
-                    fill="freeze"
-                />
-   
-                WERKERVARING    
-   
-            </text> 
-    
-            <rect x="352.2" y="416.3" class="st0" width="235.8" height="48.8"/>
-
-            <!-- animate icons __bounceIn -->
+                        to="106" 
+                        fill="freeze"
+                    />
             
-            <g class="row" transform="matrix(0.4965 0 0 0.4965 243 121.1483)">
+                    <!-- Animation dash-circle profile picture-->
+                    <animateTransform 
+                        attributeType="xml" 
+                        attributeName="transform" 
+                        begin="3s" 
+                        type="rotate"
+                        from="0 468.4 236.5"
+                        to="360 468.4 236.5"
+                        dur="20s"
+                        repeatCount="indefinite"
+                    />
 
-                <animate 
-                    id="iconHome" 
-                    dur="2.0s" 
-                    attributeName="r" 
-                    values="100; 100" 
-                    fill="freeze" 
-                    begin="click"
-                />  
+                </circle>  
 
-                <g class="cell fade-in home">
+                <!-- repeatCount="pauze" -->
 
-                    <image 
-                        class="hvr-grow bounce-in home" 
-                        width="70" 
-                        height="70" 
-                        xlink:href="Images/home.png">
-                    </image>
+                <!-- <button onclick="allmove">click</button> -->
+                <text begin="3.s" transform="matrix(1 0 0 1 150 420)" class="st12">
+    
+                    <!-- <animate 
+                        id="textAnimation1" 
+                        attributeName="stroke"
+                        from="#cbcbc6" 
+                        to="#ffffff" 
+                        begin="lineAnimation1.end"
+                        dur="1s" 
+                        repeatCount="pauze" 
+                        fill="freeze"
+                    /> -->
+
+                    <animate    
+                    id="textAnimation1"
+                    attributeName="opacity"
+                    keyTimes="0;0.1;0.5;0.6;1" 
+                    values="0;0;0;0;1"
+                    dur="1s"
+                    begin="lineAnimation1.end"
+                    fill="freeze"
+                />
+
+    
+                    OPLEIDINGEN
+    
+                </text>
+
+                <text begin="3.s" transform="matrix(1 0 0 1 648 420)" class="st12">
+    
+                    <!-- <animate 
+                        id="textAnimation2" 
+                        attributeName="stroke" 
+                        from="#cbcbc6" 
+                        to="#ffffff" 
+                        begin="lineAnimation1.end"
+                        dur="1s" 
+                        repeatCount="pauze" 
+                        fill="freeze"
+                    /> -->
+
+                    <animate    
+                    id="textAnimation2"
+                    attributeName="opacity"
+                    keyTimes="0;0.1;0.5;0.6;1" 
+                    values="0;0;0;0;1"
+                    dur="1s"
+                    begin="lineAnimation1.end"
+                    fill="freeze"
+                />
+    
+                    OMSCHRIJVING 
+    
+                </text> 
+        
+                <rect x="352.2" y="416.3" class="st0" width="235.8" height="48.8"/>
+
+                <!-- animate icons __bounceIn -->
+                
+                <g class="row" transform="matrix(0.4965 0 0 0.4965 243 121.1483)">
+
+                    <animate 
+                        id="iconHome" 
+                        dur="2.0s" 
+                        attributeName="r" 
+                        values="100; 100" 
+                        fill="freeze" 
+                        begin="click"
+                    />  
+
+                    <g class="cell fade-in home">
+
+                        <image 
+                            class="hvr-grow bounce-in home" 
+                            width="70" 
+                            height="70" 
+                            xlink:href="Images/home.png">
+                        </image>
+
+                    </g>
 
                 </g>
-
-            </g>
-            
-            <a id="icon-tel" class="row" transform="matrix(0.4965 0 0 0.4965 243 180.1483)">
                 
+                <a id="icon-tel" class="row" transform="matrix(0.4965 0 0 0.4965 243 180.1483)">
+                    
                 <animate 
                     id="iconPhone" 
                     dur="2.0s" 
@@ -545,12 +566,12 @@
             
 
             <text transform="matrix(1 0 0 1 140 375)" >
-                <textPath class="st13" xlink:href="#cloudText1">Cloud Enginering,</textPath>
+                <textPath class="st13" xlink:href="#cloudText1">Cloud Enginering (bootcamp),</textPath>
                 <textPath class="st14" xlink:href="#cloudText2">Techgrounds, Amsterdam/Utrecht.</textPath>
-                <textPath class="st14" xlink:href="#cloudText3">For people with at least HBO- working,</textPath>
-                <textPath class="st14" xlink:href="#cloudText4">thinking level, motivation and learning ability.</textPath>
-                <textPath class="st14" xlink:href="#cloudText5">The entire course was in English, in speech and</textPath>
-                <textPath class="st14" xlink:href="#cloudText6">also in writing.</textPath>
+                <textPath class="st14" xlink:href="#cloudText3">Voor mensen met minimaal HBO motivatie-,</textPath>
+                <textPath class="st14" xlink:href="#cloudText4">leer-, werk- en denkniveau.</textPath>
+                <textPath class="st14" xlink:href="#cloudText5">De gehele cursus was in het Engels, zowel in </textPath>
+                <textPath class="st14" xlink:href="#cloudText6">spraak als schriftelijk.(certificaat)</textPath>
             </text>
 
             <path id="cloudText1">
@@ -582,10 +603,10 @@
 
             <text transform="matrix(1 0 0 1 140 476)" >
                 <textPath class="st13" xlink:href="#mediaText1">Media Design,</textPath>
-                <textPath class="st14" xlink:href="#mediaText2">Cibap, school for the visual arts, Zwolle</textPath>
-                <textPath class="st14" xlink:href="#mediaText3">MBO Level 4 accelerated route.</textPath>
-                <textPath class="st14" xlink:href="#mediaText4">I completed this degree in 2.5 years</textPath>
-                <textPath class="st14" xlink:href="#mediaText5">instead of 4 years.</textPath>
+                <textPath class="st14" xlink:href="#mediaText2">Cibap, vakschool voor verbeelding, Zwolle</textPath>
+                <textPath class="st14" xlink:href="#mediaText3">MBO niveau 4 versnelde route.</textPath>
+                <textPath class="st14" xlink:href="#mediaText4">Deze opleiding heb ik in 2,5 jaar afgerond</textPath>
+                <textPath class="st14" xlink:href="#mediaText5">in plaats van 4 jaar.(diploma)</textPath>
             </text>
 
             <path id="mediaText1">
@@ -612,11 +633,11 @@
 
              <!-- Text input Schools - ivm-->
              <text transform="matrix(1 0 0 1 140 565)" >
-                <textPath class="st13" xlink:href="#ivmText1">IVM (Interior design, paint</textPath>
+                <textPath class="st13" xlink:href="#ivmText1">IVM (Interieur verf en management</textPath>
                 <textPath class="st13" xlink:href="#ivmText11">and management),</textPath>
-                <textPath class="st14" xlink:href="#ivmText2">Cibap, school for the visual arts, Zwolle</textPath>
-                <textPath class="st14" xlink:href="#ivmText3">Education in interior design, paint,</textPath>
-                <textPath class="st14" xlink:href="#ivmText4">decoration and management. (one year)</textPath>
+                <textPath class="st14" xlink:href="#ivmText2">Cibap, vakschool voor verbeelding, Zwolle</textPath>
+                <textPath class="st14" xlink:href="#ivmText3">Opleiding voor binnenhuisarchitectuur,</textPath>
+                <textPath class="st14" xlink:href="#ivmText4">schilderen, decoratie en management.(één jaar)</textPath>
             </text>
 
             <path id="ivmText1">
@@ -641,10 +662,10 @@
 
              <!-- Text input Schools - orientatie-->
              <text transform="matrix(1 0 0 1 140 658)" >
-                <textPath class="st13" xlink:href="#orientatieText1">Cibap Orientation year,</textPath>
-                <textPath class="st14" xlink:href="#orientatieText2">Cibap, school for the visual arts, Apeldoorn</textPath>
-                <textPath class="st14" xlink:href="#orientatieText3">Orientation year of the cibap, to orientate</textPath>
-                <textPath class="st14" xlink:href="#orientatieText4">wich direction best suits the student.</textPath>
+                <textPath class="st13" xlink:href="#orientatieText1">Cibap Oriëntatiejaar,</textPath>
+                <textPath class="st14" xlink:href="#orientatieText2">Cibap, vakschool voor verbeelding, Apeldoorn</textPath>
+                <textPath class="st14" xlink:href="#orientatieText3">Oriëntatiejaar van het cibap, om te oriënteren</textPath>
+                <textPath class="st14" xlink:href="#orientatieText4">welke richting het beste bij de leerling past.</textPath>
             </text>
 
             <path id="orientatieText1">
@@ -667,11 +688,11 @@
 
              <!-- Text input Schools - rpc-->
              <text transform="matrix(1 0 0 1 140 738)" >
-                <textPath class="st13" xlink:href="#rpcText1">RPC (Advertising, presentation</textPath>
-                <textPath class="st13" xlink:href="#rpcText11">and communication),</textPath>
-                <textPath class="st14" xlink:href="#rpcText2">Cibap, school for the visual arts, Zwolle</textPath>
-                <textPath class="st14" xlink:href="#rpcText3">Education in graphic design, presenting</textPath>
-                <textPath class="st14" xlink:href="#rpcText4">and marketing. (one year)</textPath>
+                <textPath class="st13" xlink:href="#rpcText1">RPC (Reclame, presentatie</textPath>
+                <textPath class="st13" xlink:href="#rpcText11">en communicatie),</textPath>
+                <textPath class="st14" xlink:href="#rpcText2">Cibap, vakschool voor verbeelding, Zwolle</textPath>
+                <textPath class="st14" xlink:href="#rpcText3">Opleiding in grafische vormgeving, presentatie</textPath>
+                <textPath class="st14" xlink:href="#rpcText4">en marketing.(één jaar)</textPath>
             </text>
 
             <path id="rpcText1">
@@ -697,9 +718,9 @@
 
              <!-- Text input Schools - orientatie-->
              <text transform="matrix(1 0 0 1 140 833)" >
-                <textPath class="st13" xlink:href="#vmboText1">VMBO theoretical education,</textPath>
+                <textPath class="st13" xlink:href="#vmboText1">VMBO Theoretische Leerweg,</textPath>
                 <textPath class="st14" xlink:href="#vmboText2">Ichtus college, Kampen</textPath>
-                <textPath class="st14" xlink:href="#vmboText3">(graduate degree)</textPath>
+                <textPath class="st14" xlink:href="#vmboText3">(diploma)</textPath>
             </text>
 
             <path id="vmboText1">

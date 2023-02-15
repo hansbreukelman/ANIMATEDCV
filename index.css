@@ -36,6 +36,15 @@
 
 /*# sourceMappingURL=index.css.map */
 
+@font-face {
+    font-family: 'bph';
+    src: url('Fonts/webfontkit-20230213-060701/bph-webfont.woff2') format('woff2'),
+         url('Fonts/webfontkit-20230213-060701/bph-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+
 .st0 {
     fill:none;
 }
@@ -43,7 +52,7 @@
 .st1 {
     text-align: center;
     fill:#FFFFFF;
-    font-family:'Raleway-ExtraBold';
+    font-family:'bph';
     font-size:37px;
     letter-spacing:4px;
 }

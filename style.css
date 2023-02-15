@@ -1,12 +1,23 @@
+@font-face {
+    font-family: 'bph';
+    src: url('Fonts/webfontkit-20230213-060701/bph-webfont.woff2') format('woff2'),
+         url('Fonts/webfontkit-20230213-060701/bph-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+
 .st0 {
     fill:none;
+    outline: none;
+    stroke: none;
 }
 
 .st1 {
     text-align: center;
     fill:#FFFFFF;
-    font-family:'Raleway-ExtraBold';
-    font-size:37px;
+    font-family:'bph';
+    font-size:46px;
     letter-spacing:4px;
 }
 
@@ -96,10 +107,11 @@
 
 .st12 {
     z-index: -1;
-    fill:#cbcbc6;
-    font-family:'Raleway-SemiBold', sans-serif;
-    font-size: 10px;
-    letter-spacing: 6px;
+    opacity: 0;
+    fill:#ffffff;
+    font-family:'bph';
+    font-size: 16px;
+    letter-spacing: 4px;
     cursor: pointer;
 }
 
@@ -190,7 +202,6 @@
         stroke-dashoffset: 0;
     }
 }
-
 
 .photo {          
     stroke-dasharray: 800;
